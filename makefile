@@ -20,7 +20,7 @@ SRCS = $(wildcard $(SRCDIR)/*.c)
 OBJS = $(SRCS:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
 
 # 定义可执行文件名
-TARGET = kb_control
+TARGET = touch_monitor
 
 # 创建目标文件目录
 $(shell mkdir -p $(OBJDIR))

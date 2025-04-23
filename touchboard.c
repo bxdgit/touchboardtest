@@ -45,6 +45,21 @@ int main() {
                     break;
             }
         }
+        else if (ev.type == EV_REL)
+        {
+            /* code */
+            switch (ev.code)
+            {
+                case REL_X:
+                    x+= ev.value;
+                    break;
+                case REL_Y:
+                    y+= ev.value;
+                    break;
+            }
+           
+        }
+        
 
         // 当有坐标更新时输出
         if (ev.type == EV_SYN) {  // 同步事件表示一组数据结束

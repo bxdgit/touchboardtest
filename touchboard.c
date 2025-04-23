@@ -51,10 +51,10 @@ int main() {
             switch (ev.code)
             {
                 case REL_X:
-                    x+= ev.value;
+                    x = ev.value;
                     break;
                 case REL_Y:
-                    y+= ev.value;
+                    y = ev.value;
                     break;
             }
            

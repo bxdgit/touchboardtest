@@ -23,13 +23,13 @@ int main(int argc, char *argv[]) {
     if (!strcmp(argv[1], "version")) {
         keyboard_init();
         get_kb_version();
-        return keyboard_exit();
+        return keyboard_close();
     }
 
     if (!strcmp(argv[1], "status")) {
         keyboard_init();
         printf("status:%d\n", get_kb_status());
-        return keyboard_exit();
+        return keyboard_close();
     }
 
     if(argc > 2) {
@@ -37,12 +37,12 @@ int main(int argc, char *argv[]) {
         if (!strcmp(argv[1], "led")) {
             keyboard_init();
             set_led_white_level(level);
-            return keyboard_exit();
+            return keyboard_close();
         }
         if (!strcmp(argv[1], "lcd")) {
             keyboard_init();
             set_lcd_level(level);
-            return keyboard_exit();
+            return keyboard_close();
         }
     }
     

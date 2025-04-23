@@ -229,7 +229,7 @@ int keyboard_init(void){
     return EXIT_SUCCESS;
 }
 
-int keyboard_exit(void){
+int keyboard_close(void){
     return close(fd);
 }
 
